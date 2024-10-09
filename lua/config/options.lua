@@ -9,6 +9,7 @@ opt.number = true -- Print line number
 opt.relativenumber = true -- Relative line numbers
 opt.clipboard = "unnamedplus"
 opt.undofile = true
+opt.ignorecase = true
 
 opt.linebreak = true -- Wrap lines at convenient points
 opt.wrap = false -- Disable line wrap

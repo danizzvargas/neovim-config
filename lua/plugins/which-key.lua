@@ -20,6 +20,7 @@ return {
     },
     { "<leader>w", "<cmd>set wrap!<cr>", desc = "Wrap/Unwrap" },
     { "<leader>L", "<cmd>Lazy<cr>", desc = "Lazy" },
+    { "<leader>q", "<cmd>qa<cr>", desc = "Quit" },
   },
 }
 
