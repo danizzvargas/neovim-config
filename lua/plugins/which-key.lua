@@ -2,6 +2,11 @@ return {
   "folke/which-key.nvim",
   event = "VeryLazy",
   opts = {
+    icons = {
+      separator = "-",
+      group = "",
+      mappings = false,
+    },
   },
   keys = {
     {
@@ -11,5 +16,8 @@ return {
       end,
       desc = "Buffer Local Keymaps (which-key)",
     },
+    { "<leader>w", "<cmd>set wrap!<cr>", desc = "Wrap/Unwrap" },
+    { "<leader>L", "<cmd>Lazy<cr>", desc = "Lazy" },
+    { "<leader>q", "<cmd>qa<cr>", desc = "Quit" },
   },
 }
