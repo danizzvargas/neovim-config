@@ -14,8 +14,14 @@ opt.undofile = true
 opt.ignorecase = true
 opt.termguicolors = true
 
+opt.splitbelow = true
+opt.splitright = true
+
 opt.linebreak = true -- Wrap lines at convenient points
 opt.wrap = false -- Disable line wrap
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
+
+-- TODO: Add spell check config
+-- setlocal spell spelllang=es_us

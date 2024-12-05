@@ -8,14 +8,14 @@ return {
   init = function() vim.g.barbar_auto_setup = false end,
   opts = {
     sidebar_filetypes = {
-      -- ['neo-tree'] = { event = 'BufWipeout' }
+      ['neo-tree'] = { event = 'BufWipeout' }
     },
   },
   keys = {
     { "<leader>c", "<cmd>BufferClose<cr>", desc = "Close buffer" },
-    { "<leader>C", "<cmd>BufferCloseAllButCurrent<cr>", desc = "Close all but current" },
-    { "<leader>bl", "<cmd>BufferNext<cr>", desc = "Next" },
-    { "<leader>bh", "<cmd>BufferPrevious<cr>", desc = "Previous" },
+    { "<leader>C", "<cmd>BufferCloseAllButCurrent<cr>", desc = "Close all but pinned" },
+    { "<leader>bn", "<cmd>BufferNext<cr>", desc = "Next" },
+    { "<leader>bp", "<cmd>BufferPrevious<cr>", desc = "Previous" },
     { "<leader>bP", "<cmd>BufferPin<cr>", desc = " Pin" },
     { "<leader>bb", "<cmd>BufferPick<cr>", desc = "Pick" },
     { "<leader>br", "<cmd>BufferRestore<cr>", desc = "Restore" },

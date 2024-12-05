@@ -10,9 +10,9 @@ return {
     local cmp = require('cmp')
 
     cmp.setup({
-      preselect = 'item',
+      -- preselect = 'item',
       completion = {
-        completeopt = 'menu,menuone,noinsert'
+        -- completeopt = 'menu,menuone,noinsert'
       },
       sources = {
         { name = 'nvim_lsp' },

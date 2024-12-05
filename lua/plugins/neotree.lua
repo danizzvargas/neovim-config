@@ -14,8 +14,8 @@ return {
     },
   },
   keys = {
-    { "<leader>ee", "<cmd>Neotree toggle<cr>",  desc = "Explorer" },
-    { "<leader>eb", "<cmd>Neotree buffers<cr>", desc = "Buffers" },
-    { "<leader>ec", "<cmd>Neotree close<cr>",   desc = "Close explorer" },
+    { "<leader>e", "<cmd>Neotree toggle<cr>",  desc = "Explorer" },
+    --{ "<leader>eb", "<cmd>Neotree buffers<cr>", desc = "Buffers" },
+    --{ "<leader>ec", "<cmd>Neotree close<cr>",   desc = "Close explorer" },
   },
 }
