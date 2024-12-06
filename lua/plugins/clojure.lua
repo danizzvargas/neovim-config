@@ -21,9 +21,21 @@ return {
     init = function()
       -- TODO: Apply format on save.
 
-      vim.keymap.set('n', '<localLeader>dt', 'i#nu/tap <ESC>', { desc = 'Add #nu/tap' })
-      vim.keymap.set('n', '<localLeader>dd', 'i#nu/tapd <ESC>', { desc = 'Add #nu/tapd' })
+      --vim.keymap.set('n', '<localLeader>dt', 'i#nu/tap <ESC>', { desc = 'Add #nu/tap' })
+      --vim.keymap.set('n', '<localLeader>dd', 'i#nu/tapd <ESC>', { desc = 'Add #nu/tapd' })
       -- vim.g["conjure#debug"] = true
+
+      local wk = require("which-key")
+      wk.add({
+        { "<localleader>c", group = "Connect" },
+        { "<localleader>e", group = "Evaluate" },
+        { "<localleader>g", group = "Go to" },
+        { "<localleader>l", group = "Logs" },
+        { "<localleader>r", group = "Refresh" },
+        { "<localleader>s", group = "Session" },
+        { "<localleader>t", group = "Tests" },
+        { "<localleader>v", group = "View" },
+      })
 
       -- Allows to execute defflows.
       -- https://nubank.slack.com/archives/C41FQ2PND/p1642430779004700?thread_ts=1642425670.003500&cid=C41FQ2PND
