@@ -29,12 +29,12 @@ return {
       wk.add({
         { "<localleader>c", group = "Connect" },
         { "<localleader>e", group = "Evaluate" },
-        { "<localleader>g", group = "Go to" },
+        { "<localleader>g", group = "Go" },
         { "<localleader>l", group = "Logs" },
         { "<localleader>r", group = "Refresh" },
         { "<localleader>s", group = "Session" },
         { "<localleader>t", group = "Tests" },
-        { "<localleader>v", group = "View" },
+        { "<localleader>v", group = "Values" },
       })
 
       -- Allows to execute defflows.
