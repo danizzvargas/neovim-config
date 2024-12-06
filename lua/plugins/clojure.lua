@@ -66,4 +66,10 @@ return {
       return cmp.setup(config)
     end,
   },
+  {
+    "gpanders/nvim-parinfer",
+    "PaterJason/nvim-treesitter-sexp",
+    -- TODO: lazy load
+    -- TODO: explore these plugins
+  },
 }
