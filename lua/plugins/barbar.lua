@@ -23,5 +23,8 @@ return {
     { "<leader>b>", "<cmd>BufferMoveNext<cr>", desc = "Move right" },
     { "<leader>bd", "<cmd>BufferPickDelete<cr>", desc = "Pick delete" },
   },
+  config = function()
+    require("which-key").add({ { "<leader>b", group = "Buffer" }, })
+  end,
   version = '^1.0.0',
 }
