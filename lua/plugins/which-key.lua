@@ -14,7 +14,8 @@ return {
       { "<leader>d", group = "Diagnostic" },
       { "<leader>f", group = "Files" },
       { "<leader>g", group = "Git" },
-      { "<leader>j", group = "Json (unestable)" },
+      { "<leader>l", group = "Language" },
+      { "<leader>s", group = "Custom shortcuts" },
       { "<leader>x", group = "Trouble" },
     })
   end,
@@ -26,10 +27,13 @@ return {
       end,
       desc = "Buffer Local Keymaps (which-key)",
     },
+    { "<leader>sh", "<cmd>noh<cr>",                             desc = "Turn off highlighting" },
+    { "<leader>sd", "<cmd>lua vim.diagnostic.open_float()<cr>", desc = "Open float diagnostic" },
+    { "<leader>sj", "<cmd>.:!jq<cr>",                           desc = "Prettify JSON",         mode = "n" },
+    { "<leader>sM", "<cmd>delmarks A-Z<cr>",                    desc = "Delete uppercase marks" },
+
     { "<leader>w",  "<cmd>set wrap!<cr>",                       desc = "Wrap/Unwrap" },
-    { "<leader>dd", "<cmd>lua vim.diagnostic.open_float()<cr>", desc = "Open float" },
     { "<leader>L",  "<cmd>Lazy<cr>",                            desc = "Lazy" },
     { "<leader>q",  "<cmd>qa<cr>",                              desc = "Quit" },
-    { "<leader>jj", "<cmd>.:!jq<cr>",                           desc = "Prettify JSON", mode = "n" },
   },
 }

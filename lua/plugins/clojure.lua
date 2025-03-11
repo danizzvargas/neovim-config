@@ -18,6 +18,11 @@ return {
     "Olical/conjure",
     ft = { "clojure", "fennel" },
     lazy = true,
+    keys = {
+      -- Test: #nu/tap something  #nu/tap   "iword/other "
+      { "<localleader>d", "i#nu/tap <esc>", desc = "Add #nu/tap",    mode = "n" },
+      { "<localleader>D", "F#df ",          desc = "Remove #nu/tap", mode = "n" },
+    },
     init = function()
       -- TODO: Apply format on save.
 
@@ -39,7 +44,7 @@ return {
 
       -- Allows to execute defflows.
       -- https://nubank.slack.com/archives/C41FQ2PND/p1642430779004700?thread_ts=1642425670.003500&cid=C41FQ2PND
-      vim.g["conjure#client#clojure#nrepl#test#current_form_names"] = { "deftest", "defflow", "defflow-new-system" }
+      vim.g["conjure#client#clojure#nrepl#test#current_form_names"] = { "deftest", "defflow", "defflow-new-system", "defflow-br", "defflow-co", "defspec" }
 
       -- Colorize output.
       vim.g["conjure#log#strip_ansi_escape_sequences_line_limit"] = 0
