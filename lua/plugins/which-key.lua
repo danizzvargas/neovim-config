@@ -15,8 +15,7 @@ return {
       { "<leader>f", group = "Files" },
       { "<leader>g", group = "Git" },
       { "<leader>l", group = "Language" },
-      { "<leader>s", group = "Custom shortcuts" },
-      { "<leader>x", group = "Trouble" },
+      { "<leader>t", group = "Trouble" },
     })
   end,
   keys = {
@@ -27,13 +26,15 @@ return {
       end,
       desc = "Buffer Local Keymaps (which-key)",
     },
-    { "<leader>sh", "<cmd>noh<cr>",                             desc = "Turn off highlighting" },
-    { "<leader>sd", "<cmd>lua vim.diagnostic.open_float()<cr>", desc = "Open float diagnostic" },
-    { "<leader>sj", "<cmd>.:!jq<cr>",                           desc = "Prettify JSON",         mode = "n" },
-    { "<leader>sM", "<cmd>delmarks A-Z<cr>",                    desc = "Delete uppercase marks" },
-
+    { "<leader>h",  "<cmd>set hlsearch!<cr>",                   desc = "Toggle highlighting" },
+    { "<leader>d",  "<cmd>lua vim.diagnostic.open_float()<cr>", desc = "Open float diagnostic" },
+    { "<leader>J",  "<cmd>.:!jq<cr>",                           desc = "Prettify JSON",         mode = "n" },
+    { "<leader>dm", "<cmd>delmarks A-Z<cr>",                    desc = "Delete uppercase marks" },
     { "<leader>w",  "<cmd>set wrap!<cr>",                       desc = "Wrap/Unwrap" },
-    { "<leader>L",  "<cmd>Lazy<cr>",                            desc = "Lazy" },
     { "<leader>q",  "<cmd>qa<cr>",                              desc = "Quit" },
+
+    { "<leader>s",  "<cmd>split<cr>",                           desc = "Window split" },
+    { "<leader>v",  "<cmd>vsplit<cr>",                          desc = "Window vertical split" },
+    { "<leader>c",  "<cmd>close<cr>",                           desc = "Window vertical split" },
   },
 }

@@ -12,8 +12,8 @@ return {
     },
   },
   keys = {
-    { "<leader>c", "<cmd>BufferClose<cr>", desc = "Close buffer" },
-    { "<leader>C", "<cmd>BufferCloseAllButVisible<cr>", desc = "Close all but pinned" },
+    { "<leader>x", "<cmd>BufferClose<cr>", desc = "Close buffer" },
+    { "<leader>X", "<cmd>BufferCloseAllButVisible<cr>", desc = "Close all but pinned" },
     { "<leader>bn", "<cmd>BufferNext<cr>", desc = "Next" },
     { "<leader>bp", "<cmd>BufferPrevious<cr>", desc = "Previous" },
     { "<leader>bP", "<cmd>BufferPin<cr>", desc = " Pin" },
